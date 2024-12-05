@@ -1,0 +1,149 @@
+/* 공통 스타일 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 글꼴 설정 */
+    margin: 0; /* 페이지의 기본 마진 제거 */
+    padding: 0; /* 페이지의 기본 패딩 제거 */
+    background: #2d2828; /* 배경색 설정 */
+    color: #171616; /* 본문 텍스트 색상 설정 */
+
+}
+
+img {
+    object-fit: cover; /* 이미지가 요소 크기에 맞게 잘림 없이 표시되도록 설정 */
+}
+
+header {
+    height: 40vh; /* 헤더 영역 높이를 40%로 설정 */
+    width: 100%; /* 헤더 너비를 화면 전체로 설정 */
+    background: url(huji.png) no-repeat center; /* 배경 이미지 설정 및 중앙 정렬 */
+    background-size: cover; /* 배경 이미지를 요소 크기에 맞게 변경 */
+    color: black; /* 헤더 텍스트 색상 설정 */
+    text-align: center; /* 텍스트를 중앙 정렬 */
+    padding: 20px 0; /* 위아래로 20px의 여백 추가 */
+}
+
+header h1 {
+    font-size: 2.8em; /* 제목의 글자 크기 설정 */
+    margin: 0; /* 제목의 마진 제거 */
+}
+
+header p {
+    margin: 10px 0 0; /* 위쪽 마진 10px, 아래쪽 마진 없음 */
+    font-size: 1.2em; /* 글자 크기 설정 */
+    font-weight: 300; /* 글자 두께를 얇게 설정 */
+}
+
+main {
+    padding: 20px; /* 컨텐츠 영역에 여백 추가 */
+    max-width: 1200px; /* 컨텐츠의 최대 너비를 1200px로 제한 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+section {
+    background: rgb(117, 102, 102); /* 섹션 배경색을 흰색으로 설정 */
+    border-radius: 10px; /* 모서리를 둥글게 설정 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 박스 그림자를 추가 */
+    padding: 20px; /* 섹션 내부 여백 설정 */
+    margin-bottom: 20px; /* 섹션 사이 간격 추가 */
+}
+
+section h2 {
+    color: #ff6f61; /* 섹션 제목 색상 설정 */
+    margin-bottom: 10px; /* 제목 아래에 여백 추가 */
+}
+
+section h3 {
+    color: #563f3f; /* 소제목 색상 설정 */
+    margin-top: 15px; /* 소제목 위에 여백 추가 */
+}
+
+ul.a { list-style-type: circle; } /* 특정 목록 스타일을 원형으로 설정 */
+ul.b { list-style-type: square; } /* 특정 목록 스타일을 사각형으로 설정 */
+ul.c { list-style-type: decimal; } /* 특정 목록 스타일을 숫자로 설정 */
+ul {
+    padding-left: 20px; /* 목록 항목의 들여쓰기 추가 */
+}
+
+.link-button {
+    display: inline-block; /* 버튼을 인라인 블록으로 설정 */
+    margin-top: 10px; /* 위쪽 여백 추가 */
+    padding: 10px 15px; /* 내부 여백 추가 */
+    background: #ff6f61; /* 버튼 배경색 설정 */
+    color: white; /* 버튼 텍스트 색상 설정 */
+    text-decoration: none; /* 텍스트의 밑줄 제거 */
+    border-radius: 5px; /* 버튼 모서리를 둥글게 설정 */
+    font-size: 1em; /* 버튼 텍스트 크기 설정 */
+}
+
+.link-button:hover {
+    background: #ff856f; /* 버튼에 마우스를 올렸을 때 배경색 변경 */
+}
+
+.photo-placeholder {
+    width: 100%; /* 너비를 전체로 설정 */
+    height: 200px; /* 높이 설정 */
+    background: #eee; /* 배경색을 연회색으로 설정 */
+    border: 2px dashed #ccc; /* 점선 테두리 설정 */
+    display: flex; /* 내부 텍스트를 가운데 정렬하기 위한 flexbox 설정 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    font-size: 1.2em; /* 텍스트 크기 설정 */
+    color: #888; /* 텍스트 색상 설정 */
+    margin-top: 10px; /* 위쪽 여백 추가 */
+}
+
+footer {
+    text-align: center; /* 푸터 텍스트 중앙 정렬 */
+    padding: 10px 0; /* 위아래 여백 추가 */
+    background: #ff6f61; /* 배경색 설정 */
+    color: white; /* 텍스트 색상 설정 */
+    position: relative; /* 푸터 위치 설정 */
+    bottom: 0; /* 화면 아래쪽에 배치 */
+    width: 100%; /* 너비를 전체로 설정 */
+}
+
+/* 눈 내리는 효과 */
+.snowflake {
+    position: absolute; /* 각 눈송이를 개별적으로 위치 설정 */
+    top: -10px; /* 눈송이를 화면 위에서 시작 */
+    width: 10px; /* 눈송이 크기 설정 (너비) */
+    height: 10px; /* 눈송이 크기 설정 (높이) */
+    background: white; /* 눈송이 색상 설정 */
+    border-radius: 50%; /* 눈송이를 동그랗게 설정 */
+    opacity: 0.8; /* 눈송이의 투명도 설정 */
+    animation: fall 5s linear infinite; /* 떨어지는 애니메이션 적용 */
+}
+
+/* 눈송이가 위에서 아래로 떨어지는 애니메이션 */
+@keyframes fall {
+    0% {
+        transform: translateY(-10px) translateX(0); /* 시작 위치 */
+        opacity: 1; /* 시작 시 완전히 보이도록 설정 */
+    }
+    100% {
+        transform: translateY(100vh) translateX(20px); /* 아래로 떨어지며 약간 옆으로 이동 */
+        opacity: 0.3; /* 아래로 갈수록 반투명 */
+    }
+}
+
+/* 눈송이 여러 개 생성 */
+body::after {
+    content: ''; /* 가상 요소 생성 */
+    position: absolute; /* 화면 전체를 덮는 눈송이 영역 설정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 다른 요소 뒤로 배치 */
+    pointer-events: none; /* 클릭 이벤트를 방해하지 않음 */
+}
+
+.snow-container {
+    position: fixed; /* 화면 전체에 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* 사용자와의 상호작용 방지 */
+    overflow: hidden; /* 화면을 넘치는 눈송이를 숨김 */
+}
